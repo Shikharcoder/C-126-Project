@@ -17,9 +17,6 @@ function setup() {
   poseNet = ml5.poseNet(VIDEO, modelLoaded);
   poseNet.on('pose', gotPoses);
 }
-function plays() {
-  bp.play();
-}
 
 function draw() {
   image(video, 0, 0, 300, 300);
